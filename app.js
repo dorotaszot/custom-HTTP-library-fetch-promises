@@ -12,8 +12,11 @@ const data = {
 }
 
 // Create Post
-http.post('https://jsonplaceholder.typicode.com/users', data)
+// http.post('https://jsonplaceholder.typicode.com/users', data)
+//   .then(data => console.log(data))
+//   .catch(err => console.log(err))
+
+// Update post
+http.put('https://jsonplaceholder.typicode.com/users/1', data)
   .then(data => console.log(data))
   .catch(err => console.log(err))
-
-
